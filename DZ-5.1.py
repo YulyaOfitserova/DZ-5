@@ -1,0 +1,6 @@
+fname = input('Название файла: ')
+file = open(fname, 'w')
+name = input('Как вас зовут? ')
+age = int(input('Ваш возраст: '))
+file.writelines(f'Ваше имя - {name}\n вам - {age} лет\n')
+file.close()
